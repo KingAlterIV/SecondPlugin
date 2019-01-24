@@ -1,0 +1,9 @@
+name: Test
+version: 19w4a
+author: KingAlterIV
+main: me.KingAlterIV.test.Main
+api-version: 1.13
+commands:
+  giveItem:
+    description: Give item test!
+    usage: /giveItem
