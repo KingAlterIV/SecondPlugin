@@ -21,34 +21,6 @@ public class ItemCommand implements CommandExecutor {
         if (sender instanceof Player) {
             Player player = (Player) sender;
 
-/*/            ItemStack diamond = new ItemStack(Material.DIAMOND_CHESTPLATE);
-
-            ItemMeta meta = diamond.getItemMeta();
-
-            List<String> lore = new ArrayList<>();
-
-            String randomLevel = String.format("%.2f", randomDouble(1, 100));
-
-            String randomProtection = String.format("%.2f", randomDouble(-10, 10));
-
-            String randomHealth = String.format("%.2f", randomDouble(1, 10));
-
-            lore.add(ChatColor.translateAlternateColorCodes('&', "&7&m----------------"));
-            lore.add(ChatColor.translateAlternateColorCodes('&', "&7Level: &e" + randomLevel));
-            lore.add(ChatColor.translateAlternateColorCodes('&', "&7Protection: &e" + randomProtection));
-            lore.add(ChatColor.translateAlternateColorCodes('&', "&7Health: &e" + randomHealth));
-            lore.add(ChatColor.translateAlternateColorCodes('&', "&7&m----------------"));
-            meta.setLore(lore);
-//            meta.setLore(Collections.singletonList(ChatColor.translateAlternateColorCodes('&', "&7Protection: &e2")));
-
-            meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
-            meta.addItemFlags(ItemFlag.HIDE_UNBREAKABLE);
-
-            meta.setUnbreakable(true);
-
-            diamond.setItemMeta(meta);
-            // Give the player our items (comma-seperated list of all ItemStack)
-/*/
             ItemStack getItem = getNewArmorItem(player);
             ItemStack item = getArmorInfo(getItem);
 
@@ -58,7 +30,6 @@ public class ItemCommand implements CommandExecutor {
             player.getInventory().addItem(getItem);
         }
 
-        // If the player (or console) uses our command correct, we can return true
         return true;
     }
 
